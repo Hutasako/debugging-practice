@@ -14,8 +14,8 @@ window.addEventListener('DOMContentLoaded', function() {
       // If we haven't selected 2 cards yet, add the current card to the
       // collection of selected cards and apply the correct CSS class.
       if (selectedCards.length < 2) {
-        card.classList.add('is-selected');
         selectedCards.push(card);
+        card.classList.add('is-selected');
         // console.log(selectedCards);
       }
 
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', function() {
       }
 
       // If we've matched all the cards, display a message.
-      if (matchedCards.length > cards.length) {
+      if (matchedCards.length == cards.length) {
         alert('You matched all the cards, nice job!');
       }
     });
