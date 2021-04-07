@@ -51,8 +51,8 @@ window.addEventListener('DOMContentLoaded', function() {
   // - #green
   // - #orange
   // - #red
-  var deckElement = document.querySelector('.Cards');
-  var deckColor = window.location.hashh;
+  var deckElement = document.querySelector('.cards');
+  var deckColor = window.location.hash.substr(1); //Get hash value from URL and remove the '#' character
 
   if (deckElement && deckColor) {
     var className = 'cards--' + deckColor;
